@@ -12,5 +12,6 @@ public class TalkToMyComputer {
         Window.setVisible(true);
         Window.Print("Hello young adventurer what is your name:");
         Player bob = new Player("Bob");
+        
     }    
 }
