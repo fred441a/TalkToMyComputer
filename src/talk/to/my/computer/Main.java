@@ -11,6 +11,7 @@ package talk.to.my.computer;
  */
 public class Main extends javax.swing.JFrame {
 
+    public static String Command;
     
     public Main() {
         initComponents();
@@ -130,6 +131,7 @@ public class Main extends javax.swing.JFrame {
 
     private void SendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SendActionPerformed
 
+        Command = Input.getText();
         Print(Console.getText()+ "\n" + Input.getText());
         Input.setText("");
     }//GEN-LAST:event_SendActionPerformed
@@ -137,6 +139,7 @@ public class Main extends javax.swing.JFrame {
     private void InputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InputKeyPressed
 
         if(evt.getKeyCode() == 10){
+        Command = Input.getText();
         Print(Console.getText()+ "\n" + Input.getText());
         Input.setText("");
         
