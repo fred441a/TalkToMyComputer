@@ -10,9 +10,10 @@ package talk.to.my.computer;
  * @author fsofu
  */
 public class Room {
-    furniture[] Room;
+    Furniture[] Room;
     String Door;
-    public class furniture{
+    
+    public Room(){
         
     }
 }

@@ -31,11 +31,6 @@ public class Main extends javax.swing.JFrame {
         Send = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         Console = new javax.swing.JTextArea();
-        jPanel1 = new javax.swing.JPanel();
-        Health = new javax.swing.JLabel();
-        Damage = new javax.swing.JLabel();
-        Speed = new javax.swing.JLabel();
-        Name = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         MonsterTab = new javax.swing.JTabbedPane();
 
@@ -69,42 +64,6 @@ public class Main extends javax.swing.JFrame {
         Console.setRows(5);
         jScrollPane2.setViewportView(Console);
 
-        Health.setIcon(new javax.swing.ImageIcon("Q:\\Frederik\\Documenter\\NetBeansProjects\\talk to my computer\\Resourses\\Heart.png")); // NOI18N
-        Health.setText("Health:");
-
-        Damage.setIcon(new javax.swing.ImageIcon("Q:\\Frederik\\Documenter\\NetBeansProjects\\talk to my computer\\Resourses\\Damage.png")); // NOI18N
-        Damage.setText("Damage:");
-
-        Speed.setIcon(new javax.swing.ImageIcon("Q:\\Frederik\\Documenter\\NetBeansProjects\\talk to my computer\\Resourses\\Speed.png")); // NOI18N
-        Speed.setText("speed");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Health)
-                        .addGap(18, 18, 18)
-                        .addComponent(Damage)
-                        .addGap(18, 18, 18)
-                        .addComponent(Speed))
-                    .addComponent(Name))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(Name)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Health)
-                    .addComponent(Damage)
-                    .addComponent(Speed)))
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -112,19 +71,14 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator1)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(MonsterTab))
-                            .addComponent(jSeparator1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Input, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Send, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)))
-                        .addGap(6, 6, 6)))
+                        .addComponent(Input, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Send, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                        .addGap(6, 6, 6))
+                    .addComponent(MonsterTab, javax.swing.GroupLayout.Alignment.LEADING))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -137,14 +91,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(Input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Send))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(MonsterTab))
-                .addContainerGap())
+                .addComponent(MonsterTab, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addGap(28, 28, 28))
         );
 
         pack();
@@ -228,14 +178,9 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextArea Console;
-    public javax.swing.JLabel Damage;
-    public javax.swing.JLabel Health;
     public javax.swing.JTextField Input;
     public javax.swing.JTabbedPane MonsterTab;
-    public javax.swing.JLabel Name;
     private javax.swing.JButton Send;
-    public javax.swing.JLabel Speed;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables

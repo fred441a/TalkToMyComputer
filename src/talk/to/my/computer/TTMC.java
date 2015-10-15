@@ -11,16 +11,7 @@ public class TTMC {
     public static void main(String[] args) {
         Window.setVisible(true);
         Window.Print("Hello young adventurer what is your name:");
-        Player bob = new Player("Bob");
-        System.out.print(Read());
+        Player Player = new Player(Window.getInput());
+        Window.Print(Player.Name + ", What a nice name");
     }
-    
-        public static String Read(){
-        if(Main.Command == null){
-            Read();
-        }
-        return Main.Command;
-        //Main.Command = null ;
-    }
-    
 }

@@ -11,7 +11,6 @@ package talk.to.my.computer;
  */
 public class Player extends Monster {
     Weapon Weapon;
-    
     public Player(String Name){
         this.Name = Name;
     }
